@@ -1,15 +1,137 @@
----
-title: Le Wagon - Middleman
----
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+<div class="wrapper">
+
+  <div id="homepage">
+    <div class="header">
+      <div id="icon-logo-homepage">
+        <%= image_tag "logo.png", width: "200" %>
+      </div>
+      <div id="navigation-homepage">
+        <div id="button-homepage">
+          <div class="login_modal_homepage">
+            <div class ="equipe">
+              <h3><%= link_to 'Equipe', '/about.html' %></h3>
+
+            </div>
+            <%#= render 'shared/login_modal' %>
+          </div>
+          <%# if devise_mapping.registerable? && controller_name != 'registrations' %>
+            <%#= button_to "Sign up", new_registration_path(resource_name), class: "btn-newhome" %><br />
+          <%# end -%>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row ">
+        <div id="homepage-title" class="color-othea  ">
+          <div class= "align-text-middle">
+           <br>
+           <br>
+          <p>L’innovation technologique</p>
+          <p><b>au service du littoral et de ses producteurs.</b></p>
+          </div>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <%= image_tag "image2.jpg", width: "100%" %>
+              <div class="carousel-caption " style = "top: 20px; text-align: left;">
+                <h2 class = "color-othea center-block">
+                “Je dois surveiller mes bassins 2 fois / jours. Ils sont loins,  cela me prend plus de 3h chaque jour!”
+                <br>
+                <em>Maxime <br>
+                Responsable production - Crevettes de l'Ankarana (Madagascar)</em></h2>
+                <br>
+              </div>
+            </div>
+
+            <div class="item">
+              <%= image_tag "image3.jpg" %>
+              <div class="carousel-caption" style = "bottom:20%; text-align: right;">
+                <h2 class = "color-othea center-block">Sans dispositifs de suivi, j’ai perdu l’ensemble de ma production cet été, car je n’ai pas pu anticiper l’épisode de malaïgue*.
+                Cela représente une <strong>perte de plusieurs millions</strong> d’€ pour moi et
+                les producteurs de la lagune!
+                <br>
+                <em>Anthony Thau
+                Responsable production - lagune de Thau</em></h2>
+                <br>
+              </div>
+            </div>
+          <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="footer">
+          <div class="col-xs-12 col-sm-6">
+            <br>
+            <br>
+            <div class="row">
+              <div class="col-xs-12 col-sm-3">
+                <%= image_tag "OPTIMISER_purple_120x120px_300dpi.png", width: "100" %>
+              </div>
+              <div class="col-xs-12 col-sm-9">
+                <h3 class = "color-othea">Gagner en productivité :</h3>
+                Réduction des coûts de production & de gestion.
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-xs-12 col-sm-3">
+                <%= image_tag "COLLECTER_purple_120x120px_300dpi.png", width: "100" %>
+              </div>
+              <div class="col-xs-12 col-sm-9">
+                <h3 class = "color-othea">Optimiser les ressources  :</h3>
+                Réduction des pertes d'exploitation, maîtrise des intrants
+              </div>
+            </div>
+            <br>
+            <br>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <br>
+            <br>
+            <div class="row">
+              <div class="col-xs-12 col-sm-3">
+                <%= image_tag "ANALYSER_purple_120x120px_300dpi.png", width: "100" %>
+              </div>
+              <div class="col-xs-12 col-sm-9">
+                <h3 class = "color-othea">Faciliter les contrôles qualité :</h3>
+                Gardez un oeil sur votre production à tout moment)
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-xs-12 col-sm-3">
+                <%= image_tag "MESURER_purple_120x120px_300dpi.png", width: "100" %>
+              </div>
+              <div class="col-xs-12 col-sm-9">
+                <h3 class = "color-othea">Suivre les performances environnementales :</h3>
+                Mesure de votre impact et votre empreinte carbone.
+              </div>
+            </div>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+

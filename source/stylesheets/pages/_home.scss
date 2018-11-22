@@ -1,17 +1,94 @@
-#home {
-  background-color: #D23333;
-  color: white;
-  height: 100vh;
+*:focus {
+  outline:none !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#element::-webkit-scrollbar {
+    display: none;
+}
+
+#homepage {
+  //background-color: rgb(245,245,220);
+
+}
+.equipe {
+  margin-right:4vh;
+  margin-top:4vh;
+}
+
+.header {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
+  justify-content: space-between;
+}
+
+
+#homepage-title {
+    height:50vh;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(10,10,10);
+    border-bottom: 1px solid black;
+}
+
+.color-othea{
+  color:#31a09d !important;
+  font-size:10;
+
+}
+#landpage-home-image {
+  border-top: solid;
+  border-width: 0.5px;
+  background-attachment: fixed;
+  top: 0;
+  height: 80vh;
+  padding-right: 5px;
+  background-size: cover;
+  background-blend-mode: lighten;
+//  background-position: center;
+
+}
+
+// #button-homepage {
+//   display: flex;
+//   align-items: baseline;;
+//   margin-right: 5vh;
+// }
+
+.btn-newhome {
+  height: 35px;
+  width: 105px;
+  margin: 1vh;
+  border-style: none;
+  background-color: white;
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 10px;
+}
+
+.btn-newhome:hover {
+
+  background-color:rgb(212,212,196);
+
+}
+
+#icon-logo-homepage {
   p {
-    margin-top: 1.5em;
+    margin-bottom: 0.2em;
+    margin-left: 10px;
   }
-  a {
-    color: rgba(0,0,0,0.4);
-    font-weight: bold;
-    font-size: 16px;
-  }
+  margin-left: 5vh;
+}
+
+#lesser-homepage {
+  font-size: 12px;
+}
+
+.footer{
+  font-family: Montserrat;
+  height:20vh;
 }
