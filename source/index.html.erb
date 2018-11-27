@@ -1,19 +1,21 @@
 <!-- ceci est un commentaire -->
 <!-- wrapper, container, container-fluid, row, col, sont des class bootstrap (sytle associé) -->
+<!-- bootstrap est responsif donc je t'invit a regarder la doc principalement -->
 <!-- une class te permet de mettre du style on y fait ref dans les fichiers css ou scss -->
 <!-- image_tag est un lien en ruby vers une image, tu peux y rajouter du style directement -->
-<!-- chaque balise ( h2, div, h3) a un style associé -->
-<div class="wrapper"> <!-- wrapper, container, container-fluid, row, col, sont des class bootstrap (sytle associé) -->
-  <div id="homepage"><!-- une class te permet de mettre du style on y fait ref dans les fichiers css ou scss -->
-    <div class="header"> <!---->
+<!-- chaque balise ( h2, div, h3) a un style associé cf section stylesheets-->
+
+<div class="wrapper">
+  <div id="homepage">
+    <div class="header">
       <div id="icon-logo-homepage">
-        <%= image_tag "logo.png", width: "200" %>
+        <img src="images/logo.png" alt="othea-tech" class="logo">
       </div>
       <div id="navigation-homepage">
         <div id="button-homepage">
           <div class="login_modal_homepage">
             <div class ="equipe">
-              <h3><%= link_to 'Equipe', '/about.html' %></h3>
+              <h3><a href="/about.html">Equipe</a></h3>
               <a href="#homepage-footer">Contact</a>
             </div>
           </div>
@@ -24,7 +26,7 @@
       <div class="row ">
         <div id="homepage-title" class="color-othea  ">
           <div class= "align-text-middle">
-           <br>
+           <br> <!-- te permet d'aller à la ligne, c'est responsive-->
            <br>
           <p>L’innovation technologique</p>
           <p><b>au service du littoral et de ses producteurs.</b></p>
@@ -39,7 +41,7 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <%= image_tag "image2.jpg", width: "100%" %>
+              <img src="images/image2.jpg" alt="othea-tech" class="carousel-image">
               <div class="carousel-caption " style = "top: 20px; text-align: left;">
                 <h2 class = "color-othea center-block">
                 “Je dois surveiller mes bassins 2 fois / jours. Ils sont loins,  cela me prend plus de 3h chaque jour!”
@@ -51,7 +53,7 @@
             </div>
 
             <div class="item">
-              <%= image_tag "image3.jpg" %>
+              <img src="images/image3.jpg" alt="othea-tech" class="carouse-image">
               <div class="carousel-caption" style = "bottom:20%; text-align: right;">
                 <h2 class = "color-othea center-block">Sans dispositifs de suivi, j’ai perdu l’ensemble de ma production cet été, car je n’ai pas pu anticiper l’épisode de malaïgue*.
                 Cela représente une <strong>perte de plusieurs millions</strong> d’€ pour moi et
@@ -83,7 +85,7 @@
             <br>
             <div class="row">
               <div class="col-xs-12 col-sm-3">
-                <%= image_tag "OPTIMISER_purple_120x120px_300dpi.png", width: "100" %>
+                <img src="images/OPTIMISER_purple_120x120px_300dpi.png" alt="fail to connect" class="logo2">
               </div>
               <div class="col-xs-12 col-sm-9">
                 <h3 class = "color-othea">Gagner en productivité :</h3>
@@ -93,7 +95,7 @@
             <br>
             <div class="row">
               <div class="col-xs-12 col-sm-3">
-                <%= image_tag "COLLECTER_purple_120x120px_300dpi.png", width: "100" %>
+                <img src="images/COLLECTER_purple_120x120px_300dpi.png" alt="fail to connect" class="logo2">
               </div>
               <div class="col-xs-12 col-sm-9">
                 <h3 class = "color-othea">Optimiser les ressources  :</h3>
@@ -108,7 +110,7 @@
             <br>
             <div class="row">
               <div class="col-xs-12 col-sm-3">
-                <%= image_tag "ANALYSER_purple_120x120px_300dpi.png", width: "100" %>
+                <img src="images/ANALYSER_purple_120x120px_300dpi.png" alt="fail to connect" class="logo2">
               </div>
               <div class="col-xs-12 col-sm-9">
                 <h3 class = "color-othea">Faciliter les contrôles qualité :</h3>
@@ -118,7 +120,7 @@
             <br>
             <div class="row">
               <div class="col-xs-12 col-sm-3">
-                <%= image_tag "MESURER_purple_120x120px_300dpi.png", width: "100" %>
+                <img src="images/MESURER_purple_120x120px_300dpi.png" alt="fail to connect" class="logo2">
               </div>
               <div class="col-xs-12 col-sm-9">
                 <h3 class = "color-othea">Suivre les performances environnementales :</h3>
