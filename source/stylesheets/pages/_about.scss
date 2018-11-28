@@ -1,8 +1,8 @@
 #about {
-  background-image: url('../images/team.png');
+  background-image: linear-gradient(rgba(256,256,256,0.4), rgba(256,256,256,0.3)), url('https://images.unsplash.com/photo-1534030665069-90e016e995e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7a2d187d6835b9009ba36089a770c218&auto=format&fit=crop&w=1350&q=80');
   background-size:cover;
+  height:100vh;
 
-  width: 100%;
   // display: flex;
   // align-items: center;
   // justify-content: space-around;
