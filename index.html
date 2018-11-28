@@ -7,10 +7,11 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title></title>
-    <link href="stylesheets/application-5106f303.css" rel="stylesheet" />
+    <link href="stylesheets/application-48f8f1dc.css" rel="stylesheet" />
     <script src="javascripts/application-93de88c9.js"></script>
     <link href="images/favicon-968d210d.png" rel="icon" type="image/png" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -29,14 +30,18 @@
   <div id="homepage">
     <div class="header">
       <div id="icon-logo-homepage">
-        <img src="images/logo-968d210d.png" alt="othea-tech" class="logo">
+        <img src="images/log-46f17f0b.png" alt="othea-tech" class="logo">
       </div>
       <div id="navigation-homepage">
         <div id="button-homepage">
           <div class="login_modal_homepage">
             <div class ="equipe">
-              <h3><a href="/about.html">Equipe</a></h3>
-              <a href="#homepage-footer">Contact</a>
+              <div style="padding:15px;">
+                <h4><a href="/about.html">équipe</a></h4>
+              </div>
+              <div style="padding:15px;">
+                <h4><a href="#homepage-footer">contact</a></h4>
+              </div>
             </div>
           </div>
         </div>
@@ -45,7 +50,7 @@
     <div class="container-fluid">
       <div class="row ">
         <div id="homepage-title" class="color-othea  ">
-          <div class= "align-text-middle">
+          <div class= "align-text-middle" data-aos="fade-down" data-aos-duration="3000">
            <br> <!-- te permet d'aller à la ligne, c'est responsive-->
            <br>
           <p>L’innovation technologique</p>
@@ -60,27 +65,27 @@
           </ol>
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
-            <div class="item active">
-              <img src="images/image2-a7f0ee25.jpg" alt="othea-tech" class="carousel-image">
-              <div class="carousel-caption " style = "top: 20px; text-align: left;">
-                <h2 class = "color-othea center-block">
+            <div class="item bg2 active">
+              <!-- <img src="images/image2-a7f0ee25.jpg" alt="othea-tech" class="d-block w-100"> -->
+              <div class="carousel-caption othea-style ">
+                <h3 class = "color-othea center-block">
                 “Je dois surveiller mes bassins 2 fois / jours. Ils sont loins,  cela me prend plus de 3h chaque jour!”
                 <br>
                 <em>Maxime <br>
-                Responsable production - Crevettes de l'Ankarana (Madagascar)</em></h2>
+                Responsable production - Crevettes de l'Ankarana (Madagascar)</em></h3">
                 <br>
               </div>
             </div>
 
-            <div class="item">
-              <img src="images/image3-3df34fe3.jpg" alt="othea-tech" class="carouse-image">
-              <div class="carousel-caption" style = "bottom:20%; text-align: right;">
-                <h2 class = "color-othea center-block">Sans dispositifs de suivi, j’ai perdu l’ensemble de ma production cet été, car je n’ai pas pu anticiper l’épisode de malaïgue*.
+            <div class="item bg1">
+              <!-- <img src="images/image3-3df34fe3.jpg" alt="othea-tech" class="d-block w-100"> -->
+              <div class="carousel-caption othea-style">
+                <h3 class = "color-othea center-block">Sans dispositifs de suivi, j’ai perdu l’ensemble de ma production cet été, car je n’ai pas pu anticiper l’épisode de malaïgue*.
                 Cela représente une <strong>perte de plusieurs millions</strong> d’€ pour moi et
                 les producteurs de la lagune!
                 <br>
                 <em>Anthony Thau
-                Responsable production - lagune de Thau</em></h2>
+                Responsable production - lagune de Thau</em></h3>
                 <br>
               </div>
             </div>
@@ -153,12 +158,12 @@
         </div>
       </div>
       <div class="row">
-        <div id="homepage-footer" class="color-othea  ">
-          <div class= "align-text-middle">
+        <div id="homepage-footer" class="color-othea ">
+          <div class= "align-text-middle" data-aos="fade-down" data-aos-duration="2000">
            <br>
            <br>
           <h2>Contact:</h2>
-          <p><b>Lucile@othea-tech.com</b></p>
+          <p><b>lucile@othea-tech.com</b></p>
           <br>
           <br>
           </div>
@@ -170,4 +175,8 @@
 
 
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
