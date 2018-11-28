@@ -1,5 +1,5 @@
 #about {
-  background-image: linear-gradient(rgba(256,256,256,0.4), rgba(256,256,256,0.3)), url('https://images.unsplash.com/photo-1534030665069-90e016e995e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7a2d187d6835b9009ba36089a770c218&auto=format&fit=crop&w=1350&q=80');
+  background-image:image-url('font.jpg');
   background-size:cover;
   height:100vh;
 
@@ -34,4 +34,8 @@
   //   color: #D23333;
   // }
 }
-
+.team {
+ background-color:rgba(256,256,256,0.8);
+ box-shadow: 0px 0px 4px 4px rgba(256,256,256,0.8);
+ height:100vh;
+}
